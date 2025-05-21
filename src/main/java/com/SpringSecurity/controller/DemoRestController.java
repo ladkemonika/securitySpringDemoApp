@@ -10,4 +10,14 @@ public class DemoRestController {
 	public String getMsg() {
 		return "hello ";
 	}
+	
+	@GetMapping("/greet")
+	public String getGreet() {
+		return "Good Morning";
+	}
+	
+	@GetMapping("/contact")
+	public String getContact() {
+		return" call : +91 22 22 2222 22";
+	}
 }
